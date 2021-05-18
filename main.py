@@ -261,13 +261,6 @@ async def hello(ctx):
     await ctx.send(response)
 
 
-@bot.command()
-async def sa(ctx):
-    mention = ctx.author.mention
-    response = f"{mention} A.s."
-    await ctx.send(response)
-
-
 @bot.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(bot))
